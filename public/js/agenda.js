@@ -1,8 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-
+     //obtengo todos los datos del formulario.
      let formulario = document.querySelector("#formularioEventos");
-
+     //obtengo el div de la agenda.
      var calendarEl = document.getElementById('agenda');
 
      var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     _token: formulario._token.value,
                }
           },
-
+          //cuando toque un evento mostrara la informacion.
           dateClick: function(info) {
                formulario.reset();
 
